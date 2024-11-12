@@ -1,50 +1,43 @@
 .present {
-   background: url('../img/present/main_bg.jpg') 0 0 / cover no-repeat;
+   background: url('../img/present/mask_bg.png') 0 0 / cover no-repeat,
+      url('../img/present/main_bg.jpg') 0 0 / cover no-repeat;
    &__container {
       position: relative;
    }
    &__body {
       display: flex;
-      justify-content: space-between;
+      color: #ffffff;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      padding: 75px 0;
+      padding: 86px 0 60px 0;
+      text-align: center;
       @media (max-width: $md2) {
          padding: 55px 0;
       }
       @media (max-width: $md3) {
-         padding: 75px 0 190px 0;
+         padding: 95px 0;
          flex-direction: column;
          justify-content: center;
          position: relative;
       }
       @media (max-width: $md4) {
-         padding: 100px 0 220px 0;
-      }
-   }
-   &__info {
-      max-width: 580px;
-      color: #ffffff;
-      margin-right: 50px;
-      padding-bottom: 18px;
-      @media (max-width: $md3) {
-         max-width: 480px;
-         margin: 0px 0px 0px 0px;
-      }
-      @media (max-width: $md4) {
-         max-width: 360px;
       }
    }
    &__title {
-      font-family: 'SF UI Display';
+      font-family: 'Fira Sans';
       font-style: normal;
       font-weight: 700;
       font-size: 48px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
+      line-height: 120%;
+
       @media (max-width: $md2) {
          font-size: 40px;
          margin-bottom: 20px;
       }
-      @media (max-width: $md4) {
+      @media (max-width: $md3) {
+         margin-bottom: 18px;
          font-size: 28px;
       }
    }
@@ -52,67 +45,18 @@
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
-      line-height: 140%;
+      font-size: 18px;
+      line-height: 120%;
+      margin-bottom: 33px;
       @media (max-width: $md2) {
          font-size: 16px;
-         line-height: 120%;
       }
-   }
-   &__form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 37px 20px;
-      border-radius: 20px;
-      background-color: #fff;
-      gap: 13px;
-      box-shadow: 10px 14px 44px rgba(0, 0, 0, 0.1);
       @media (max-width: $md3) {
-         position: absolute;
-         bottom: -50%;
-         left: 50%;
-         transform: translate(-50%, 0);
-      }
-      & input {
-         width: 320px;
-         height: 50px;
-         padding-left: 20px;
-         font-family: 'SF UI Display';
-         font-style: normal;
-         font-weight: 300;
-         font-size: 16px;
-         color: $main_text;
-         border-radius: 10px;
-         border: 1px solid rgba(60, 77, 107, 0.1);
-         @media (max-width: $md4) {
-            width: 270px;
-         }
-      }
-   }
-   &__subtitle {
-      font-family: 'SF UI Display';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      color: $main_text;
-   }
-}
-.form-present {
-   &__policy {
-      max-width: 265px;
-      text-align: center;
-      font-family: 'SF UI Display';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 8px;
-      line-height: 125%;
-      color: $main_text;
-      & span {
-         font-weight: 500;
+         margin-bottom: 25px;
       }
    }
    &__btn {
-      padding: 16px 17px;
+      padding: 15px 58px;
+      font-size: 16px;
    }
 }
