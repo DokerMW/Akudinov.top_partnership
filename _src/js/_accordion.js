@@ -1,4 +1,4 @@
-new Accordion('.accordion-included', {
+new Accordion('.accordion-faq', {
 	duration: 400,
 	showMultiple: true,
 });

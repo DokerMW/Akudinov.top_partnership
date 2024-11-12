@@ -307,7 +307,7 @@ const swiperReviewsVideo = new Swiper('.video-reviews__swiper', {
 	},
 });
 
-new Accordion('.accordion-included', {
+new Accordion('.accordion-faq', {
 	duration: 400,
 	showMultiple: true,
 });

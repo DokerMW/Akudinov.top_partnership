@@ -1,6 +1,7 @@
-.included {
-   background-color: $light_grey_bg;
+.faq {
+   background-color: #fff;
    padding: 50px 0 48px 0;
+
    @media (max-width: $md3) {
       padding: 40px 0;
    }
@@ -20,6 +21,8 @@
    }
    & .ac.is-active > .ac-header .ac-trigger::after {
       content: '';
+      outline: none;
+      border: none;
    }
    & .ac.is-active .close span::before {
       transform: rotate(90deg) translate(-1.1px, -1.4px);
@@ -29,12 +32,12 @@
    & .ac.is-active .close span::after {
       background-color: #fff;
    }
-   & .ac.is-active .accordion-included__header {
+   & .ac.is-active .accordion-faq__header {
       background-color: $blue_bg;
       border-radius: 20px 20px 0 0;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 5px 5px 44px rgba(0, 0, 0, 0.07);
    }
-   & .ac.is-active .accordion-included__title {
+   & .ac.is-active .accordion-faq__title {
       color: #fff;
       & span {
          color: #fff;
@@ -47,9 +50,11 @@
       color: $main_text;
    }
 }
-.accordion-included {
+.accordion-faq {
    &__item {
       border-radius: 15px;
+      border: none;
+      box-shadow: 5px 5px 44px rgba(0, 0, 0, 0.07);
    }
    &__header {
       background-color: #fff;
@@ -60,7 +65,7 @@
       padding: 0px 30px;
    }
    &__list {
-      padding: 24px 0 20px 0;
+      padding: 24px 0 30px 0;
       @media (max-width: $md3) {
          padding: 14px 0 10px 0;
       }
@@ -69,11 +74,12 @@
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 400;
-      font-size: 16px;
       color: rgba(60, 77, 107, 0.8);
       margin-bottom: 24px;
-      padding-left: 20px;
       position: relative;
+      font-size: 18px;
+      line-height: 125%;
+
       @media (max-width: $md3) {
          font-size: 14px;
          margin-bottom: 10px;
@@ -82,24 +88,13 @@
       @media (max-width: $md4) {
          font-size: 12px;
       }
-      &::before {
-         content: '';
-         position: absolute;
-         top: 2px;
-         left: 0;
-         width: 11px;
-         height: 9px;
-         background: url('../img/icons/check.svg') 0 0 no-repeat;
-         @media (max-width: $md3) {
-            background: none;
-         }
-      }
+
       &:last-child {
          margin: 0px 0px 0px 0px;
       }
    }
 }
-.included .accordion-included__title {
+.faq .accordion-faq__title {
    font-family: 'SF UI Display';
    font-style: normal;
    font-weight: 700;
@@ -121,7 +116,7 @@
       content: '';
    }
 }
-.included .accordion-included__header {
+.faq .accordion-faq__header {
    padding: 0 10px 0 20px;
    height: 60px;
    @media (max-width: $md3) {
