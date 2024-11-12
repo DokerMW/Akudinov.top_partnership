@@ -1543,6 +1543,186 @@ h6 {
   }
 }
 
+.suitable {
+  padding: 48px 0 30px 0;
+  background-color: #fff;
+}
+@media (max-width: 767.98px) {
+  .suitable {
+    padding: 40px 0;
+  }
+}
+.suitable__title {
+  margin-bottom: 28px;
+}
+@media (max-width: 479.98px) {
+  .suitable__title {
+    margin-bottom: 20px;
+  }
+}
+.suitable__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin: 0 -10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 767.98px) {
+  .suitable__body {
+    padding: 0 20px;
+    margin: 0 -5px;
+  }
+}
+@media (max-width: 420px) {
+  .suitable__body {
+    padding: 0 10px;
+  }
+}
+.suitable__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.suitable__column:nth-child(4) {
+  min-height: 264px;
+}
+@media (max-width: 991.98px) {
+  .suitable__column:nth-child(4) {
+    min-height: none;
+  }
+}
+@media (max-width: 1185px) {
+  .suitable__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1185px) {
+  .suitable__column {
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 479.98px) {
+  .suitable__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
+.item-suitable {
+  background-color: #eaf1f8;
+  border-radius: 20px;
+  padding: 24px 30px 30px 30px;
+  -webkit-box-shadow: 5px 5px 44px rgba(0, 0, 0, 0.04);
+          box-shadow: 5px 5px 44px rgba(0, 0, 0, 0.04);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media (max-width: 767.98px) {
+  .item-suitable {
+    padding: 15px 20px;
+    -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.04), 5px 5px 4px rgba(0, 0, 0, 0.04);
+            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.04), 5px 5px 4px rgba(0, 0, 0, 0.04);
+  }
+}
+.item-suitable__img {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  width: 48px;
+  height: 46px;
+  margin-bottom: 10px;
+}
+@media (max-width: 767.98px) {
+  .item-suitable__img {
+    margin: 0px 0px 8px 0px;
+  }
+}
+.item-suitable__img_01 {
+  background: url("../../img/suitable/01.svg") 0 0/contain no-repeat;
+}
+.item-suitable__img_02 {
+  background: url("../img/suitable/02.svg") 0 0/contain no-repeat;
+}
+.item-suitable__img_03 {
+  background: url("../img/suitable/03.svg") 0 0/contain no-repeat;
+}
+.item-suitable__img_04 {
+  background: url("../img/suitable/04.svg") 0 0/contain no-repeat;
+}
+.item-suitable__img_05 {
+  background: url("../img/suitable/05.svg") 0 0/contain no-repeat;
+}
+.item-suitable__img_06 {
+  background: url("../img/suitable/06.svg") 0 0/contain no-repeat;
+}
+.item-suitable__img_07 {
+  background: url("../img/suitable/07.svg") 0 0/contain no-repeat;
+}
+.item-suitable__img_08 {
+  background: url("../img/suitable/08.svg") 0 0/contain no-repeat;
+}
+.item-suitable__title {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #3c4d6b;
+  margin-bottom: 6px;
+  line-height: 130%;
+}
+@media (max-width: 767.98px) {
+  .item-suitable__title {
+    font-size: 16px;
+  }
+}
+.item-suitable__text {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #3c4d6b;
+  opacity: 0.6;
+  margin-bottom: 12px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+@media (max-width: 767.98px) {
+  .item-suitable__text {
+    font-size: 14px;
+  }
+}
+.item-suitable__btn {
+  padding: 16px 28px;
+  font-size: 16px;
+}
+@media (max-width: 991.98px) {
+  .item-suitable__btn {
+    font-size: 14px;
+    padding: 14px 20px;
+  }
+}
+
 .usability {
   background-color: #eaf1f8;
   padding: 40px 0 50px 0;
