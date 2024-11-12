@@ -1,0 +1,139 @@
+.start {
+   padding: 49px 0;
+   background-color: #fff;
+   @media (max-width: $md3) {
+      padding: 40px 0;
+   }
+   &__title {
+      margin-bottom: 17px;
+   }
+   &__subtitle {
+      margin-bottom: 45px;
+   }
+   &__body {
+      display: flex;
+      margin: 0 -10px 20px -10px;
+      @media (max-width: $md1) {
+         flex-wrap: wrap;
+         margin: 0 -15px 20px -15px;
+      }
+      @media (max-width: $md3) {
+         margin: 0 -5px 20px -5px;
+      }
+      @media (max-width: $md4) {
+         margin: 0 0px 0px 0px;
+         padding: 0 20px;
+      }
+      @media (max-width: 400) {
+         padding: 0;
+      }
+   }
+   &__text {
+      max-width: 900px;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+      text-align: center;
+      color: $main_text;
+      opacity: 0.6;
+      margin: 0px auto 20px auto;
+      @media (max-width: $md3) {
+         font-size: 13px;
+      }
+   }
+   &__column {
+      flex: 0 1 25%;
+      padding: 0 10px;
+      display: flex;
+      @media (max-width: $md1) {
+         flex: 0 1 50%;
+         padding: 0 15px;
+         margin-bottom: 30px;
+      }
+      @media (max-width: $md3) {
+         padding: 0 5px;
+      }
+      @media (max-width: $md4) {
+         flex: 0 1 100%;
+         padding: 0px 0px 0px 0px;
+      }
+   }
+   &__btn {
+      display: flex;
+      justify-content: center;
+   }
+   &__btn_item {
+      display: inline-block;
+      padding: 16px 29px;
+      font-weight: 600;
+      font-size: 16px;
+   }
+}
+.item-start {
+   background-color: #fff;
+   padding: 44px 30px 12px 30px;
+   height: 100%;
+   border-radius: 20px;
+   box-shadow: 5px 5px 44px rgba(0, 0, 0, 0.09);
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   width: 100%;
+   @media (max-width: $md1) {
+      padding: 44px 30px 25px 30px;
+   }
+   @media (max-width: $md3) {
+      padding: 15px 20px;
+      box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.04), 5px 5px 4px rgba(0, 0, 0, 0.04);
+   }
+   &__num {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: $light_grey_bg;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      color: #00c0f3;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @media (max-width: $md1) {
+         width: 43px;
+         height: 43px;
+         font-size: 19px;
+      }
+   }
+   &__title {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      color: $main_text;
+      margin-bottom: 6px;
+      line-height: 130%;
+      @media (max-width: $md3) {
+         font-size: 16px;
+      }
+   }
+   &__text {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 125%;
+      color: $main_text;
+      text-align: center;
+      & span {
+         font-weight: 700;
+      }
+   }
+}
