@@ -1,0 +1,55 @@
+.receive {
+   padding: 50px 0 53px 0;
+   @media (max-width: $md3) {
+      padding: 40px 0;
+   }
+   &__title {
+      margin-bottom: 22px;
+      @media (max-width: $md3) {
+         margin-bottom: 13px;
+      }
+   }
+   &__subtitle {
+      margin-bottom: 25px;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      color: $main_text;
+      @media (max-width: $md3) {
+         font-size: 16px;
+         margin-bottom: 20px;
+      }
+   }
+   &__body {
+      @media (max-width: $md3) {
+         padding: 0 20px;
+      }
+   }
+   &__item {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: rgba(60, 77, 107, 0.77);
+      margin-bottom: 15px;
+      padding-left: 19px;
+      position: relative;
+      @media (max-width: $md3) {
+         font-size: 16px;
+         margin-bottom: 10px;
+      }
+      &::before {
+         content: '';
+         position: absolute;
+         top: 5px;
+         left: 0;
+         width: 11px;
+         height: 9px;
+         background: url('../img/icons/check.svg') 0 0 no-repeat;
+      }
+      &:last-child {
+         margin: 0px 0px 0px 0px;
+      }
+   }
+}

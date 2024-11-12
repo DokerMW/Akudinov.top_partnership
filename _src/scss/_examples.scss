@@ -1,0 +1,132 @@
+.examples {
+   padding: 50px 0 49px 0;
+   @media (max-width: $md3) {
+      padding: 40px 0;
+   }
+   &__title {
+      margin-bottom: 20px;
+   }
+   &__subtitle {
+      margin-bottom: 30px;
+      @media (max-width: $md3) {
+         max-width: 340px;
+         margin: 0px auto 20px auto;
+      }
+   }
+   &__body {
+      position: relative;
+      & .swiper-button-next::after,
+      & .swiper-button-prev::after {
+         font-size: 26px;
+         color: $blue_bg;
+      }
+      & .swiper-button-disabled {
+         color: rgba($color: #3c4d6b, $alpha: 0.1);
+      }
+      @media (max-width: $md3) {
+         max-width: 340px;
+         margin: 0px auto;
+      }
+      @media (max-width: $md3) {
+         max-width: 300px;
+         margin: 0px auto;
+      }
+   }
+}
+.examples {
+   &__prev-btn {
+      left: -43px;
+      @media (max-width: $md4) {
+         left: -30px;
+      }
+   }
+   &__next-btn {
+      right: -43px;
+      @media (max-width: $md4) {
+         right: -30px;
+      }
+   }
+}
+.item-example {
+   padding: 30px 30px 32px 30px;
+   background-color: $light_grey_bg;
+   border-radius: 20px;
+   @media (max-width: $md4) {
+      padding: 15px;
+   }
+   &__images {
+      display: flex;
+      flex-direction: column;
+      width: 311px;
+      margin-bottom: 33px;
+      @media (max-width: $md1) {
+         width: 100%;
+      }
+   }
+   &__img {
+      width: 311px;
+      height: 78px;
+      overflow: hidden;
+      margin-bottom: 13px;
+      @media (max-width: $md1) {
+         width: 100%;
+      }
+      &:last-child {
+         margin: 0px 0px 0px 0px;
+      }
+      & img {
+         width: 100%;
+         max-height: 100%;
+         object-fit: cover;
+         border-radius: 20px;
+      }
+   }
+   &__title {
+      margin-bottom: 18px;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      color: $main_text;
+   }
+   &__info {
+      display: flex;
+      gap: 30px;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: $main_text;
+      opacity: 0.6;
+   }
+   &__time {
+      & span {
+         padding-left: 22px;
+         position: relative;
+         &::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            background: url('../img/icons/clock.svg') 0 0 no-repeat;
+         }
+      }
+   }
+   &__params {
+      padding-left: 20px;
+      position: relative;
+      &::before {
+         content: '';
+         position: absolute;
+         width: 16px;
+         height: 16px;
+         top: 50%;
+         left: 0;
+         transform: translate(0, -50%);
+         background: url('../img/icons/params.svg') 0 0 no-repeat;
+      }
+   }
+}

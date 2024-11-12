@@ -1,0 +1,144 @@
+.appform {
+   background-color: $light_grey_bg;
+   padding: 50px 0 0 0;
+   @media (max-width: $md3) {
+      padding-top: 40px;
+   }
+   &__container {
+      position: relative;
+   }
+   &__body {
+      width: 625px;
+      text-align: left;
+      padding-bottom: 46px;
+      @media (max-width: $md1) {
+         width: auto;
+      }
+      @media (max-width: $md3) {
+         padding-bottom: 40px;
+      }
+   }
+   &__title {
+      margin-bottom: 12px;
+      text-align: left;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      color: $main_text;
+      @media (max-width: $md1) {
+         text-align: center;
+      }
+      @media (max-width: $md3) {
+         font-size: 28px;
+         margin-bottom: 10px;
+      }
+   }
+   &__text {
+      margin-bottom: 25px;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: $main_text;
+      opacity: 0.6;
+      @media (max-width: $md1) {
+         text-align: center;
+      }
+      @media (max-width: $md3) {
+         font-size: 14px;
+         margin-bottom: 25px;
+      }
+   }
+   &__grid {
+      display: grid;
+      grid-template: 50px 50px 100px / repeat(2, 321px);
+      gap: 21px;
+      margin-bottom: 26px;
+      @media (max-width: $md1) {
+         justify-content: center;
+         text-align: center;
+      }
+      @media (max-width: $md3) {
+         grid-template: repeat(5, 50px) / 317px;
+         gap: 10px;
+      }
+      & input {
+         padding-left: 21px;
+         width: 321px;
+         height: 50px;
+         border-radius: 10px;
+         font-family: 'SF UI Display';
+         font-style: normal;
+         font-weight: 300;
+         font-size: 16px;
+         color: $main_text;
+         background-color: #fff;
+         @media (max-width: $md3) {
+            font-size: 14px;
+         }
+      }
+      & textarea {
+         resize: none;
+         border-radius: 10px;
+         grid-column: span 2;
+         padding: 12px 21px;
+         font-family: 'SF UI Display';
+         font-style: normal;
+         font-weight: 300;
+         font-size: 16px;
+         color: $main_text;
+         @media (max-width: $md3) {
+            grid-column: auto;
+         }
+      }
+   }
+   &__form {
+      text-align: center;
+   }
+   &__agree {
+      max-width: 500px;
+      display: inline-block;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 14px;
+      color: $main_text;
+      opacity: 0.7;
+      margin-bottom: 26px;
+      @media (max-width: $md1) {
+         max-width: none;
+         text-align: center;
+      }
+      & a {
+         color: $green;
+         @media (min-width: 1190px) {
+            &:hover {
+               text-decoration: underline;
+            }
+         }
+      }
+   }
+   &__btn {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+      color: #ffffff;
+      padding: 17px 87px;
+      @media (max-width: $md1) {
+         text-align: center;
+      }
+   }
+   &__image {
+      position: absolute;
+      right: 12px;
+      bottom: 0;
+      @media (max-width: $md1) {
+         display: none;
+      }
+   }
+}

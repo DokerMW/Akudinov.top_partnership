@@ -1,0 +1,95 @@
+.extra {
+   padding: 50px 0 51px 0;
+   @media (max-width: $md3) {
+      padding: 40px 0;
+   }
+   &__title {
+      margin-bottom: 20px;
+   }
+   &__body {
+      display: flex;
+      margin: 0 -10px;
+      height: 100%;
+      @media (max-width: $md2) {
+         flex-wrap: wrap;
+      }
+      @media (max-width: $md3) {
+         margin: 0 -5px;
+      }
+   }
+   &__column {
+      flex: 0 1 25%;
+      padding: 0 10px;
+      display: flex;
+      min-height: 100%;
+      @media (max-width: $md2) {
+         flex: 0 1 50%;
+         margin-bottom: 20px;
+      }
+      @media (max-width: $md3) {
+         padding: 0 5px;
+         margin-bottom: 10px;
+      }
+   }
+   &__item {
+      flex: 1 0 100%;
+      background-color: $light_grey_bg;
+      border-radius: 20px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      @media (min-width: 1190px) {
+         &:hover .extra__image {
+            transform: translate(0, -10px);
+         }
+      }
+      @media (max-width: $md3) {
+         padding: 10px;
+      }
+   }
+   &__image {
+      width: 120px;
+      min-height: 95px;
+      margin-bottom: 20px;
+      transition: all 0.3s;
+      @media (max-width: $md3) {
+         width: 90px;
+         margin-bottom: 10px;
+         min-height: 80px;
+      }
+      @media (max-width: $md4) {
+         width: 70px;
+      }
+      &_pr {
+         background: url('../img/extra/pr.svg') 0 0 / contain no-repeat;
+      }
+      &_context {
+         background: url('../img/extra/context.svg') 0 0 / contain no-repeat;
+      }
+      &_dev {
+         background: url('../img/extra/dev.svg') 0 0 / contain no-repeat;
+      }
+      &_audit {
+         background: url('../img/extra/audit.svg') 0 0 / contain no-repeat;
+      }
+   }
+   &__text {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center;
+      color: $main_text;
+      @media (min-width: 1190px) {
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+      @media (max-width: $md3) {
+         font-size: 14px;
+      }
+   }
+}

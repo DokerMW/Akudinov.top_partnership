@@ -1,0 +1,157 @@
+.popup {
+   -webkit-overflow-scrolling: touch;
+   z-index: 100;
+   padding: 30px 10px;
+   position: fixed;
+   top: 0px;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   transition: visibility 0.8s ease 0s;
+   visibility: hidden;
+   &::before {
+      content: '';
+      background-color: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.8s ease 0s;
+   }
+   &.show {
+      visibility: visible;
+      overflow: auto;
+      &::before {
+         opacity: 1;
+      }
+      .popup__body {
+         transform: scale(1);
+      }
+   }
+   &._active {
+      overflow: auto;
+      visibility: visible;
+      &::before {
+         opacity: 1;
+      }
+      .popup__body {
+         transition: all 0.3s ease 0.2s;
+         transform: scale(1);
+      }
+   }
+   &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100%;
+      flex: 1 1 auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__body {
+      transform: scale(0);
+      transition: all 0.3s ease 0s;
+      background-color: #ffffff;
+      padding: 37px 20px;
+      width: 100%;
+      max-width: 360px;
+      border-radius: 20px;
+      & .form-callback {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         border-radius: 20px;
+         background-color: #fff;
+         gap: 13px;
+         & input {
+            width: 320px;
+            height: 50px;
+            padding-left: 20px;
+            font-family: 'SF UI Display';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            color: $main_text;
+            border-radius: 10px;
+            border: 1px solid rgba(60, 77, 107, 0.1);
+         }
+         &__policy {
+            max-width: 265px;
+            text-align: center;
+            font-family: 'SF UI Display';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 8px;
+            line-height: 125%;
+            color: $main_text;
+            & span {
+               font-weight: 500;
+            }
+         }
+         &__btn {
+            padding: 16px 17px;
+         }
+      }
+   }
+   &__subtitle {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      color: $main_text;
+   }
+   &__close {
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 30;
+      & span {
+         position: relative;
+         &::before {
+            content: '';
+            width: 20px;
+            height: 1px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            transform: rotate(45deg);
+            background-color: $main_text;
+         }
+         &::after {
+            content: '';
+            width: 20px;
+            height: 1px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            transform: rotate(-45deg);
+            transition: all 0.3s;
+            background-color: $main_text;
+         }
+      }
+   }
+}
+.popup_video {
+   & .popup__body {
+      max-width: 1000px;
+      height: 500px;
+      padding: 10px;
+      background-color: #000;
+   }
+   & .popup__video {
+      height: 100%;
+      & iframe {
+         width: 100%;
+         min-width: 100%;
+         min-height: 100%;
+         height: 100%;
+      }
+   }
+}

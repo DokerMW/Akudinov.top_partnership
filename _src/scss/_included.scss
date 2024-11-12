@@ -1,0 +1,186 @@
+.included {
+   background-color: $light_grey_bg;
+   padding: 50px 0 48px 0;
+   @media (max-width: $md3) {
+      padding: 40px 0;
+   }
+   &__title {
+      margin-bottom: 30px;
+      @media (max-width: $md3) {
+         margin-bottom: 15px;
+      }
+   }
+   &__body {
+      @media (max-width: $md3) {
+         padding: 0 20px;
+      }
+      @media (max-width: $md4) {
+         padding: 0px 0px 0px 0px;
+      }
+   }
+   & .ac.is-active > .ac-header .ac-trigger::after {
+      content: '';
+   }
+   & .ac.is-active .close span::before {
+      transform: rotate(90deg) translate(-1.1px, -1.4px);
+      right: 51%;
+      background-color: #fff;
+   }
+   & .ac.is-active .close span::after {
+      background-color: #fff;
+   }
+   & .ac.is-active .accordion-included__header {
+      background-color: $blue_bg;
+      border-radius: 20px 20px 0 0;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   }
+   & .ac.is-active .accordion-included__title {
+      color: #fff;
+      & span {
+         color: #fff;
+      }
+   }
+   & .ac.is-active .ac-trigger:focus {
+      color: #fff;
+   }
+   & .ac .ac-trigger:focus {
+      color: $main_text;
+   }
+}
+.accordion-included {
+   &__item {
+      border-radius: 15px;
+   }
+   &__header {
+      background-color: #fff;
+      border-radius: 20px;
+      transition: all 0.3s;
+   }
+   &__panel {
+      padding: 0px 30px;
+   }
+   &__list {
+      padding: 24px 0 20px 0;
+      @media (max-width: $md3) {
+         padding: 14px 0 10px 0;
+      }
+   }
+   &__point {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: rgba(60, 77, 107, 0.8);
+      margin-bottom: 24px;
+      padding-left: 20px;
+      position: relative;
+      @media (max-width: $md3) {
+         font-size: 14px;
+         margin-bottom: 10px;
+         padding-left: 0;
+      }
+      @media (max-width: $md4) {
+         font-size: 12px;
+      }
+      &::before {
+         content: '';
+         position: absolute;
+         top: 2px;
+         left: 0;
+         width: 11px;
+         height: 9px;
+         background: url('../img/icons/check.svg') 0 0 no-repeat;
+         @media (max-width: $md3) {
+            background: none;
+         }
+      }
+      &:last-child {
+         margin: 0px 0px 0px 0px;
+      }
+   }
+}
+.included .accordion-included__title {
+   font-family: 'SF UI Display';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   color: $main_text;
+   height: 60px;
+   position: relative;
+   @media (max-width: $md3) {
+      font-size: 15px;
+      height: 45px;
+   }
+   @media (max-width: $md4) {
+      font-size: 12px;
+   }
+   & .step {
+      color: $blue_bg;
+   }
+   &::after {
+      content: '';
+   }
+}
+.included .accordion-included__header {
+   padding: 0 10px 0 20px;
+   height: 60px;
+   @media (max-width: $md3) {
+      height: 45px;
+   }
+   @media (max-width: $md4) {
+      padding: 0 10px;
+   }
+}
+.close {
+   position: absolute;
+   width: 25px;
+   height: 25px;
+   right: 0;
+   top: 50%;
+   transform: translate(0, -50%);
+   & span {
+      display: inline-block;
+      position: relative;
+      width: 25px;
+      height: 25px;
+      right: 10px;
+      top: 50%;
+      transform: translate(0, -50%);
+      @media (max-width: $md3) {
+         width: 15px;
+         height: 15px;
+      }
+      &::after {
+         content: '';
+         position: absolute;
+         display: inline-block;
+         width: 25px;
+         height: 4px;
+         top: 50%;
+         left: 0;
+         transform: translate(0, -50%);
+         transition: all 0.3s;
+         background-color: $green;
+         @media (max-width: $md3) {
+            width: 15px;
+            height: 2px;
+         }
+      }
+      &::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         right: 50%;
+         width: 4px;
+         height: 25px;
+         background-color: $green;
+         transform: translate(50%, 0);
+         transition: all 0.3s;
+         display: inline-block;
+         @media (max-width: $md3) {
+            height: 15px;
+            width: 2px;
+         }
+      }
+   }
+}

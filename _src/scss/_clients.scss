@@ -1,0 +1,65 @@
+.clients {
+   padding: 50px 0 78px 0;
+   @media (max-width: $md3) {
+      padding: 40px 0 60px 0;
+   }
+   &__title {
+      margin-bottom: 35px;
+      @media (max-width: $md3) {
+         margin-bottom: 25px;
+      }
+   }
+   &__body {
+      position: relative;
+      @media (max-width: $md2) {
+         max-width: 650px;
+         margin: 0px auto;
+      }
+      @media (max-width: $md3) {
+         max-width: 380px;
+      }
+      @media (max-width: $md4) {
+         max-width: 230px;
+      }
+      & .swiper-button-next::after,
+      & .swiper-button-prev::after {
+         font-size: 26px;
+         color: $blue_bg;
+      }
+      & .swiper-button-disabled {
+         color: rgba($color: #3c4d6b, $alpha: 0.1);
+      }
+   }
+   &__slide {
+      text-align: center;
+      & a {
+         max-width: 170px;
+         max-height: 80px;
+         height: 100%;
+         & img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+         }
+      }
+   }
+   &__swiper-wrapper {
+      align-items: center;
+   }
+   &__prev-btn {
+      left: -43px;
+   }
+   &__next-btn {
+      right: -43px;
+   }
+}
+.clients__body .clients__swiper-pagination {
+   bottom: -30px;
+}
+.clients__body .swiper-pagination-bullet-active {
+   background-color: $green;
+}
+.clients__body .swiper-pagination-bullet {
+   width: 5px;
+   height: 5px;
+}

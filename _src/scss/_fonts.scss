@@ -1,0 +1,120 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter.eot');
+	src: local('Inter'), local('Inter'),
+		 url('../fonts/Inter.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Inter.otf') format('otf'),
+		 url('../fonts/Inter.woff') format('woff'),
+		 url('../fonts/Inter.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.eot');
+	src: local('Roboto-Regular'), local('Roboto-Regular'),
+		 url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Roboto-Regular.otf') format('otf'),
+		 url('../fonts/Roboto-Regular.woff') format('woff'),
+		 url('../fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Bold.eot');
+	src: local('Roboto-Bold'), local('Roboto-Bold'),
+		 url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Roboto-Bold.otf') format('otf'),
+		 url('../fonts/Roboto-Bold.woff') format('woff'),
+		 url('../fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('../fonts/SF UI Text Light.eot'); 
+	src: url('../fonts/SF UI Text Light.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/SF UI Text Light.woff2') format('woff2'), 
+		url('../fonts/SF UI Text Light.woff') format('woff'),
+		url('../fonts/SF UI Text Light.ttf') format('truetype'), 
+		url('../fonts/SF UI Text Light.svg#sf_ui_text_light') format('svg'); 
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('../fonts/SF UI Text Medium.eot'); 
+	src: url('../fonts/SF UI Text Medium.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/SF UI Text Medium.woff2') format('woff2'), 
+		url('../fonts/SF UI Text Medium.woff') format('woff'),
+		url('../fonts/SF UI Text Medium.ttf') format('truetype'), 
+		url('../fonts/SF UI Text Medium.svg#sf_ui_text_medium') format('svg'); 
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('../fonts/SF UI Display Bold.eot'); 
+	src: url('../fonts/SF UI Display Bold.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/SF UI Display Bold.woff2') format('woff2'), 
+		url('../fonts/SF UI Display Bold.woff') format('woff'), 
+		url('../fonts/SF UI Display Bold.ttf') format('truetype'), 
+		url('../fonts/SF UI Display Bold.svg#sf_ui_display_bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('../fonts/SF UI Display Medium.eot'); 
+	src: url('../fonts/SF UI Display Medium.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/SF UI Display Medium.woff2') format('woff2'), 
+		url('../fonts/SF UI Display Medium.woff') format('woff'), 
+		url('../fonts/SF UI Display Medium.ttf') format('truetype'), 
+		url('../fonts/SF UI Display Medium.svg#sf_ui_display_medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('../fonts/SF UI Display Black.eot'); 
+	src: url('../fonts/SF UI Display Black.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/SF UI Display Black.woff2') format('woff2'), 
+		url('../fonts/SF UI Display Black.woff') format('woff'), 
+		url('../fonts/SF UI Display Black.ttf') format('truetype'), 
+		url('../fonts/SF UI Display Black.svg#sf_ui_display_black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('../fonts/SF UI Display Light.eot'); 
+	src: url('../fonts/SF UI Display Light.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/SF UI Display Light.woff2') format('woff2'), 
+		url('../fonts/SF UI Display Light.woff') format('woff'), 
+		url('../fonts/SF UI Display Light.ttf') format('truetype'), 
+		url('../fonts/SF UI Display Light.svg#sf_ui_display_light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('../fonts/SF UI Display Regular.eot'); 
+	src: url('../fonts/SF UI Display Regular.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/SF UI Display Regular.woff2') format('woff2'), 
+		url('../fonts/SF UI Display Regular.woff') format('woff'), 
+		url('../fonts/SF UI Display Regular.ttf') format('truetype'), 
+		url('../fonts/SF UI Display Regular.svg#sf_ui_display_regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}

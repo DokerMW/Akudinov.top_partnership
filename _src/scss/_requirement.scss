@@ -1,0 +1,109 @@
+.requirement {
+   padding: 50px 0 48px 0;
+   @media (max-width: $md3) {
+      padding: 285px 0 40px 0;
+   }
+   &__title {
+      margin-bottom: 30px;
+      @media (max-width: $md3) {
+         font-size: 28px;
+         margin-bottom: 20px;
+      }
+   }
+   &__body {
+      display: grid;
+      grid-template: repeat(2, minmax(126px, auto)) / repeat(3, 371px);
+      grid-auto-rows: 126px;
+      grid-auto-flow: row;
+      gap: 20px;
+      @media (max-width: $md1) {
+         grid-template: repeat(3, 126px) / repeat(2, 371px);
+         justify-content: center;
+      }
+      @media (max-width: $md2) {
+         grid-template-columns: 1fr;
+         grid-template-rows: repeat(5, 100px);
+         gap: 15px;
+      }
+      @media (max-width: $md3) {
+         padding: 0 20px;
+         grid-template-rows: repeat(5, minmax(min-content, max-content));
+         gap: 10px;
+      }
+   }
+   &__item {
+      padding: 30px 16px 30px 30px;
+      border-radius: 20px;
+      background-color: $light_grey_bg;
+      display: flex;
+      gap: 30px;
+      transition: all 0.3s;
+      @media (max-width: $md2) {
+         align-items: center;
+         text-align: left;
+      }
+      @media (max-width: $md3) {
+         gap: 18px;
+         padding: 15px 20px;
+      }
+      &_big {
+         grid-row: span 2;
+         flex-direction: column;
+         @media (max-width: $md1) {
+            grid-row: auto;
+            grid-column: span 2;
+            flex-direction: row;
+         }
+         @media (max-width: $md2) {
+            grid-column: auto;
+         }
+      }
+      @media (min-width: 1190px) {
+         &:hover {
+            transform: scale(1.05);
+         }
+      }
+   }
+   &__image {
+      flex: 1 0 auto;
+      width: 55px;
+      max-height: 55px;
+      min-height: 55px;
+      @media (max-width: $md2) {
+         flex: 0 0 55px;
+      }
+   }
+   &__item_big .requirement__image {
+      width: 116px;
+      max-height: 116px;
+   }
+   &__text {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 120%;
+      color: $main_text;
+      @media (max-width: $md3) {
+         font-size: 16px;
+      }
+   }
+   &__bold {
+      font-weight: 700;
+   }
+   &__item:nth-child(1) .requirement__image {
+      background: url('../img/requirement/01.svg') 0 0 / contain no-repeat;
+   }
+   &__item:nth-child(2) .requirement__image {
+      background: url('../img/requirement/02.svg') 0 0 / contain no-repeat;
+   }
+   &__item:nth-child(3) .requirement__image {
+      background: url('../img/requirement/03.svg') 0 0 / contain no-repeat;
+   }
+   &__item:nth-child(4) .requirement__image {
+      background: url('../img/requirement/04.svg') 0 0 / contain no-repeat;
+   }
+   &__item:nth-child(5) .requirement__image {
+      background: url('../img/requirement/05.svg') 0 0 / contain no-repeat;
+   }
+}

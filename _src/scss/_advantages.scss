@@ -1,0 +1,102 @@
+.advantages {
+   padding: 50px 0 52px 0;
+   background-color: #fff;
+   @media (max-width: $md3) {
+      padding: 40px 0;
+   }
+   &__title {
+      margin-bottom: 25px;
+   }
+   &__body {
+      display: flex;
+      height: 100%;
+      margin: 0 -10px;
+      @media (max-width: $md1) {
+         flex-wrap: wrap;
+      }
+      @media (max-width: $md3) {
+         margin: 0 -5px;
+      }
+   }
+   &__column {
+      flex: 0 1 25%;
+      padding: 0 10px;
+      @media (max-width: $md1) {
+         flex: 0 1 50%;
+         margin-bottom: 20px;
+      }
+      @media (max-width: $md1) {
+         padding: 0 5px;
+         margin-bottom: 10px;
+      }
+      @media (max-width: $md4) {
+         flex: 0 1 100%;
+      }
+   }
+}
+.item-advantages {
+   background-color: #fff;
+   height: 100%;
+   border-radius: 20px;
+   padding: 30px 30px 32px 30px;
+   box-shadow: 5px 5px 44px rgba(0, 0, 0, 0.04), 5px 5px 44px rgba(0, 0, 0, 0.04);
+   display: flex;
+   flex-direction: column;
+   @media (max-width: $md3) {
+      padding: 15px 20px;
+      box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.04), 5px 5px 4px rgba(0, 0, 0, 0.04);
+   }
+   &__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      @media (max-width: $md3) {
+         flex-direction: column;
+         align-items: start;
+      }
+   }
+   &__img {
+      justify-self: start;
+      width: 33px;
+      height: 33px;
+      margin-right: 15px;
+      @media (max-width: $md3) {
+         margin: 0px 0px 8px 0px;
+      }
+      &_01 {
+         background: url('../img/advantages/01.svg') 0 0 / contain no-repeat;
+      }
+      &_02 {
+         background: url('../img/advantages/02.svg') 0 0 / contain no-repeat;
+      }
+      &_03 {
+         background: url('../img/advantages/03.svg') 0 0 / contain no-repeat;
+      }
+      &_04 {
+         background: url('../img/advantages/04.svg') 0 0 / contain no-repeat;
+      }
+   }
+   &__title {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      color: $main_text;
+      @media (max-width: $md3) {
+         font-size: 18px;
+      }
+   }
+   &__text {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 125%;
+      color: $main_text;
+      opacity: 0.6;
+      flex: 1 0 100%;
+      @media (max-width: $md3) {
+         font-size: 14px;
+      }
+   }
+}

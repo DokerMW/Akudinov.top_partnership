@@ -1,0 +1,94 @@
+.usability {
+   background-color: $light_grey_bg;
+   padding: 40px 0 41px 0;
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: $md3) {
+         flex-direction: column;
+      }
+   }
+   &__title {
+      text-align: left !important;
+      margin-bottom: 11px;
+      @media (max-width: $md2) {
+         font-size: 26px;
+      }
+      @media (max-width: $md3) {
+         text-align: center !important;
+         font-size: 28px;
+         margin-bottom: 7px;
+      }
+   }
+   &__body {
+      @media (max-width: $md2) {
+         max-width: 450px;
+      }
+      @media (max-width: $md3) {
+         text-align: center;
+         margin-bottom: 10px;
+      }
+   }
+   &__text {
+      max-width: 530px;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 125%;
+      color: rgba(60, 77, 107, 0.77);
+      @media (max-width: $md2) {
+         font-size: 16px;
+      }
+   }
+   &__price {
+      text-align: right;
+   }
+   &__cost {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 54px;
+      color: $blue_bg;
+      margin-bottom: 7px;
+      white-space: nowrap;
+      max-width: 500px;
+      @media (max-width: $md2) {
+         font-size: 36px;
+      }
+      @media (max-width: $md3) {
+         font-size: 44px;
+         text-align: center;
+      }
+   }
+   &__more {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: $green;
+      @media (max-width: $md2) {
+         font-size: 16px;
+      }
+      & span {
+         padding-right: 22px;
+         position: relative;
+         &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 15px;
+            height: 8px;
+            transform: translate(0, -50%);
+            background: url('../img/icons/arrow.svg') 0 0 no-repeat;
+         }
+         @media (min-width: 1190px) {
+            &:hover {
+               text-decoration: underline;
+            }
+         }
+      }
+   }
+}

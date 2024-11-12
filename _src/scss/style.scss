@@ -1,0 +1,206 @@
+//===== Шрифты ==============================================================================//
+@import '_fonts.scss';
+//===============================================================================================//
+
+//===== Шрифт по умолчанию ======================================================================//
+$fontfamily: 'SF UI Display';
+//===============================================================================================//
+
+//===== Переменные ==============================================================================//
+$minwidth: 320px;
+$maxwidth: 1173px;
+$md1: $maxwidth + 12px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+$dark_grey_bg: #3d4147;
+$light_grey_bg: #eaf1f8;
+$blue_bg: #286ab3;
+$green: #22b573;
+$main_text: #3c4d6b;
+//===============================================================================================//
+
+//===== Основная сетка ==========================================================================//
+._container {
+   max-width: $maxwidth;
+   margin: 0 auto;
+   padding: 0 10px;
+   width: 100%;
+   @media (max-width: $md1) {
+      max-width: 970px;
+   }
+   @media (max-width: $md2) {
+      max-width: 750px;
+   }
+   @media (max-width: $md3) {
+      max-width: none;
+      padding: 0 10px;
+   }
+}
+
+//===============================================================================================//
+
+.breadcrumb {
+   position: absolute;
+   top: 20px;
+   left: 10px;
+   display: flex;
+   &__item {
+      & a,
+      &::before {
+         font-family: 'SF UI Display';
+         font-weight: 400;
+         font-size: 12px;
+         color: #ffffff;
+         opacity: 0.6;
+         padding-left: 10px;
+      }
+      & a:hover {
+         opacity: 1;
+         text-decoration: underline;
+      }
+      &:first-child a {
+         padding: 0;
+      }
+      &:not(:first-child):before {
+         content: '»';
+      }
+      &_current {
+         & a {
+            padding-left: 10px;
+         }
+         & a,
+         &::before {
+            font-family: 'SF UI Text';
+            font-weight: 500;
+            color: #ffffff;
+            opacity: 1;
+            font-size: 12px;
+         }
+         &::before {
+            content: '»';
+         }
+      }
+   }
+}
+
+.btn {
+   font-family: 'SF UI Display';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   text-align: center;
+   color: #ffffff;
+   background-color: $green;
+   border-radius: 10px;
+   border: 1px solid $green;
+   text-transform: uppercase;
+   @media (min-width: 1190px) {
+      &:hover {
+         color: $green;
+         background-color: #fff;
+         transition: all 0.3s;
+      }
+   }
+   &:active {
+      position: relative;
+      top: 2px;
+      left: 1px;
+   }
+}
+.title {
+   font-family: 'SF UI Display';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 38px;
+   text-align: center;
+   color: $main_text;
+   @media (max-width: $md2) {
+      font-size: 32px;
+   }
+   @media (max-width: $md3) {
+      font-size: 28px;
+   }
+}
+.subtitle {
+   font-family: 'SF UI Display';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   text-align: center;
+   color: $main_text;
+   opacity: 0.6;
+   @media (max-width: $md2) {
+      font-size: 14px;
+   }
+}
+.swiper-button-prev {
+   left: -43px;
+}
+.swiper-button-next {
+   right: -43px;
+}
+
+//===== Импорты ==============================================================================//
+@import '_nullstyle.scss';
+@import '_header.scss';
+@import '_present.scss';
+@import '_requirement.scss';
+@import '_stages.scss';
+@import '_advantages.scss';
+@import '_usability.scss';
+@import '_examples.scss';
+@import '_included.scss';
+@import '_application.scss';
+@import '_receive.scss';
+@import '_cooperation.scss';
+@import '_tariff.scss';
+@import '_appform.scss';
+@import '_clients.scss';
+@import '_reviews.scss';
+@import '_extra.scss';
+@import '_footer.scss';
+@import '_popup.scss';
+
+//===============================================================================================//
+
+//===== Оболочка ================================================================================//
+.wrapper {
+   width: 100%;
+   overflow: hidden;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   font-family: $fontfamily;
+   font-weight: normal;
+}
+.page {
+   flex: 1 1 auto;
+}
+body._lock {
+   overflow: hidden;
+}
+//===============================================================================================//
+.input {
+   position: relative;
+   & .error_alert {
+      position: absolute;
+      //  top: 51px;
+      bottom: 5px;
+      left: 10px;
+      font-size: 10px;
+      color: red;
+      display: none;
+      z-index: 100;
+   }
+   &.error .error_alert {
+      display: block;
+   }
+}
+
+input.error {
+   border: 1px solid red !important;
+}
+input.success {
+   border: 1px solid green !important;
+}
